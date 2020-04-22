@@ -1,0 +1,41 @@
+.team 
+	padding: 4rem 0 5rem
+	background-color: #fafafa
+	@media (max-width: 767px)
+		padding-top: 1rem
+	&__inner 
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+	&__item 
+		flex: 0 0 30%
+		margin-top: 3rem
+		@media (max-width: 767px)
+			flex: 0 0 100%
+
+	&__img 
+		box-shadow: 1rem 1rem 1rem rgba(0,0,0,.2)
+		img 
+			display: block
+
+	&__name 
+
+	&__post 
+		
+	a 
+		font-size: 1.5rem
+		color: $text
+		display: block
+		text-decoration: none
+		margin-bottom: 1rem
+		padding-left: 2.5rem
+		&:hover 
+			color: #000
+			font-weight: 700
+	&__email 
+		background: url('../img/icons/email2.svg') no-repeat left center 
+
+	&__phone 
+		background: url('../img/icons/phone2.svg') no-repeat left center
+

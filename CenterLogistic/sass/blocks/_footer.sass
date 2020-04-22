@@ -1,0 +1,38 @@
+.footer 
+	padding: 6rem 0
+	background: url('../img/footer-bg-right.png') no-repeat right bottom, #fafafa url('../img/footer-bg-left.png') no-repeat left bottom
+	text-align: center
+	@media (max-width: 1200px)
+		background-size: 40%
+	&__logo 
+		max-width: 200px
+		margin: 0 auto 2.5rem
+	&__contacts 
+		font-weight: 700
+		color: #737373
+		margin-bottom: 3rem
+		p 
+			margin: 0 0 .5rem
+	&__link 
+		a 
+			display: inline-block
+			padding-bottom: 1rem
+			color: #4d7ca8
+			font-weight: 700
+			text-decoration: none
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 100%
+				height: 2px
+				transform: scaleX(0)
+				background: #4d7ca8
+				transition: .2s
+			&:hover::after
+				transform: scaleX(1)
+			&:not(:last-child)
+				margin-right: 1.5rem
+		

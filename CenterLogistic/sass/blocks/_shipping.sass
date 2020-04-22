@@ -1,0 +1,64 @@
+.shipping 
+	padding: 9rem 0 5rem
+	@media (max-width: 400px)
+		padding: 6rem 0 0
+	&__inner 
+		border-radius: 1rem
+		padding: 3rem 3rem 9rem
+		box-shadow: 0 0 2rem rgba(0,0,0,.3)
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		position: relative
+		@media (max-width: 900px) 
+			padding-bottom: 6rem
+		&::after 
+			content: 'Services'
+			color: #f4f4f4
+			font-size: 7rem
+			line-height: 1
+			font-weight: 700
+			position: absolute
+			right: 3rem
+			bottom: 2rem
+			@media (max-width: 400px)
+				font-size: 5rem
+	
+	&__item 
+		flex-basis: 22%
+		@media (max-width: 900px)
+			flex-basis: 48%
+			margin-bottom: 3rem
+		@media (max-width: 600px)
+			flex-basis: 100%
+		h3 
+			color: #000
+			margin-top: 0
+		p 
+			font-size: 1.2rem
+			line-height: 1.5
+		a 
+			font-size: 1.2rem
+			font-weight: 700
+			padding: .7rem 0
+			color: #476889
+			text-decoration: none
+			position: relative
+			transition: .3s
+			&::after 
+				content: ''
+				position: absolute
+				bottom: 0
+				left: 0
+				display: block
+				width: 10px
+				height: 2px
+				background-color: #476889
+				transition: .3s
+			&:hover 
+				color: #f00
+				&::after 
+					width: 100%
+					background-color: #f00
+
+

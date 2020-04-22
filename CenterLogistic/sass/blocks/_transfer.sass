@@ -1,0 +1,44 @@
+.transfer 
+	padding: 6rem 0
+	&__inner 
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-start
+		
+	&__item
+		flex: 0 0 50% 
+		@media (max-width: 767px)
+			flex: 0 0 100% 
+
+	&__info 
+		padding: 0 5rem 0 5.2rem
+		position: relative
+		background-image: url('../img/icons/dashed-line.png') 
+		background-position: 1.4rem top
+		background-repeat: repeat-y
+		@media (max-width: 767px)
+			padding-right: 0
+			margin-bottom: 4rem
+		&::before, &::after 
+			content: ''
+			display: block
+			width: 30px
+			height: 60px
+			position: absolute
+			left: 0
+		&::before 
+			background: #fff url('../img/icons/map-marker.svg') no-repeat center
+			top: 0
+		&::after 
+			background: #fff url('../img/icons/map-marker-green.svg') no-repeat center
+			bottom: 0
+	&__punkt 
+		&:not(:last-child)
+			margin: 1rem 0 4rem
+		h4 
+			font-size: 1.8rem
+			margin: 0
+		p 
+			@media (max-width: 900px)
+				font-size: 1.4rem
+

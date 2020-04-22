@@ -1,0 +1,123 @@
+// слайдер
+.slick-slider
+	/* Слайдер запущен */
+.slick-slider.slick-initialized
+	/* Слайдер с точками */
+.slick-slider.slick-dotted
+
+	/* Ограничивающая оболочка */
+.slick-list
+	overflow: hidden
+	/* Лента слайдов */
+.slick-track
+	display: flex
+	align-items: start
+
+// слайд
+.slick-slide
+	/* Слайд активный (показывается) */
+.slick-slide.slick-active
+	/* Слайд основной */
+.slick-slide.slick-current
+	/* Слайд по центру */
+.slick-slide.slick-center
+	/* Клонированный слайд */
+.slick-slide.slick-cloned
+
+// стрелка
+.slick-arrow
+	/* Стрелка влево */
+.slick-arrow.slick-prev
+	/* Стрелка вправо */
+.slick-arrow.slick-next
+	/* Стрелка не активная */
+.slick-arrow.slick-disabled
+
+// Точки (булиты) 
+.slick-dots 
+
+.slick-dots li 
+	/* Активная точка */
+.slick-dots li.slick-active
+	/* Элемент точки */
+.slick-dots button
+
+
+// конкретный слайдер
+.slider
+	position: relative
+	z-index: 1
+	// padding: 0 50px   нужен если есть стрелки
+	.slick-arrow
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		z-index: 2
+		font-size: 0
+		width: 20px
+		height: 30px
+		border: 0
+	.slick-disabled
+		opacity: .2
+	.slick-prev
+		left: 0
+		background: #fff url('../img/icons/chevron-left-solid.svg') no-repeat center /100%
+	.slick-next
+		right: 0
+		background: #fff url('../img/icons/chevron-right-solid.svg') no-repeat center / 100%
+	.slick-dots 
+		display: flex
+		align-items: center
+		justify-content: center
+	.slick-dots li 
+		list-style: none
+		width: 10px
+		height: 10px
+		background-color: #dbdbdb
+		border-radius: 50%
+		margin: 0 5px
+		cursor: pointer
+
+	.slick-dots li.slick-active
+		background-color: #0047fb
+		border: 1px solid #eee
+		box-shadow: 0 0 5px rgba(0,0,0,.7)
+
+	.slick-dots button
+		font-size: 0px
+		border: 0
+		padding: 0
+		
+		
+	&__item
+		padding: 20px 0 0 20px
+		&:focus 
+			outline: none
+
+	.name 
+		display: flex
+		align-items: center
+		line-height: 1.5
+		margin-bottom: 25px
+		position: relative
+		img 
+			display: block
+			width: 100px
+			border-radius: 50%
+			border: 5px solid #fff
+			box-shadow: 0 3px 5px rgba(0,0,0,.1)
+			margin-right: 30px
+			position: relative
+			z-index: -10
+		&::before 
+			content: ''
+			position: absolute
+			top: -25px
+			left: 45px
+			z-index: -20
+			display: block
+			width: 5px
+			height: 130px
+			background-color: red
+			transform: rotate(40deg) translateX(-50%)
+			box-shadow: 10px 5px 0 blue, 20px 10px 0 red
