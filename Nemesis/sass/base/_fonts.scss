@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/RobotoRegular.eot');
+	src: url('../fonts/Roboto/RobotoRegular.eot') format('embedded-opentype'),
+		url('../fonts/Roboto/RobotoRegular.woff2') format('woff2'),
+		url('../fonts/Roboto/RobotoRegular.woff') format('woff'),
+		url('../fonts/Roboto/RobotoRegular.ttf') format('truetype'),
+		url('../fonts/Roboto/RobotoRegular.svg#RobotoRegular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/RobotoBold.eot');
+	src: url('../fonts/Roboto/RobotoBold.eot') format('embedded-opentype'),
+		url('../fonts/Roboto/RobotoBold.woff2') format('woff2'),
+		url('../fonts/Roboto/RobotoBold.woff') format('woff'),
+		url('../fonts/Roboto/RobotoBold.ttf') format('truetype'),
+		url('../fonts/Roboto/RobotoBold.svg#RobotoBold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/RobotoLight.eot');
+	src: url('../fonts/Roboto/RobotoLight.eot') format('embedded-opentype'),
+		url('../fonts/Roboto/RobotoLight.woff2') format('woff2'),
+		url('../fonts/Roboto/RobotoLight.woff') format('woff'),
+		url('../fonts/Roboto/RobotoLight.ttf') format('truetype'),
+		url('../fonts/Roboto/RobotoLight.svg#RobotoLight') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}

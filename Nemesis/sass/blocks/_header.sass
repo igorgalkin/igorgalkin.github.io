@@ -1,0 +1,48 @@
+.header 
+	background-color: #fff
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 10
+	&__inner 
+		max-width: 88%
+		margin: 0 auto
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__logo 
+		padding: 3rem 0
+		flex-grow: 1
+		text-align: center
+		border-right: 1px solid #eee
+		border-left: 1px solid #eee
+	&__burger 
+		padding-right: 5%
+	&__search 
+		padding-left: 5%
+	&__img 
+		width: 20px
+	&__menu
+		position: fixed
+		top: 9.4rem
+		left: -100%
+		bottom: 0
+		z-index: 1
+		width: 320px
+		height: 100%
+		background: #fff
+		padding: 2rem 1.5rem
+		overflow: auto
+		transition: .5s
+		&.active 
+			left: 0
+
+.logo 
+	display: inline-block
+	padding: 5px 10px
+	border: 2px solid #5d257c
+	font-size: 2rem
+	font-weight: 700
+	text-transform: uppercase
+	color: #5d257c

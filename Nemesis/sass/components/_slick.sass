@@ -1,0 +1,89 @@
+// ОСНОВНЫЕ СТИЛИ СЛАЙДЕРА
+.slick
+	&-slider 
+		position: relative
+
+	&-list 
+		position: relative
+		top: 50%
+		transform: translateY(-50%)
+		overflow: hidden
+
+	&-track 
+		display: flex
+		align-items: flex-start
+
+
+// СТИЛИ КОНКРЕТНОГО СЛАЙДЕРА
+.slider-prepare
+	.slick 
+		&-dots 
+			position: absolute
+			bottom: 20px
+			left: 50%
+			transform: translateX(-50%)
+			padding: 0
+			margin: 0
+			list-style: none
+			display: flex
+			justify-content: center
+			align-items: center
+			@media (max-width: 450px)
+				bottom: 10px
+			li 
+				margin: 0 5px
+				padding: 0
+				display: flex
+				justify-content: center
+				align-items: center
+				button 
+					font-size: 0
+					line-height: 0
+					padding: 0
+					width: 4px
+					height: 4px
+					border-radius: 50%
+					border: 1px solid #888
+					background-color: #888
+					&:focus
+						outline: 0
+				&.slick-active 
+					button
+						border-color: #000
+						background-color: #000
+
+		&-arrow 
+			position: absolute
+			transform: translateY(-50%) rotate(45deg)
+			z-index: 2
+			box-sizing: border-box
+			display: block
+			height: 20px
+			width: 20px
+			border: 2px solid #888
+			line-height: 0
+			font-size: 0
+			background: #fff
+			outline: none
+			&:hover, &:focus 
+				outline: none
+			&.slick-disabled 
+				opacity: .25
+		&-next 
+			top: 65%
+			left: 109%
+			border-left: 0
+			border-bottom: 0
+			@media (max-width: 576px)
+				left: 85%
+			@media (max-width: 450px)
+				top: 30%
+		&-prev 
+			top: 85%
+			left: 112%
+			border-right: 0
+			border-top: 0
+			@media (max-width: 576px)
+				left: 88%
+			@media (max-width: 450px)
+				top: 70%
