@@ -1,0 +1,51 @@
+.center 
+	padding: 30px 0
+	background-color: #def0f6
+	&__block 
+		max-width: 100%
+		display: flex
+		justify-content: space-between
+		position: relative
+		overflow: hidden
+		@media (max-width: 700px)
+			flex-direction: column
+			max-width: 368px
+			margin: 0 auto
+	&__timer 
+		margin-bottom: 0
+		@media (max-width: 700px)
+			margin-bottom: 3rem
+	&__price 
+		@media (max-width: 700px)
+			margin-bottom: 3rem
+	&__img 
+		width: 400px
+		height: 400px
+		border-radius: 50%
+		border: 2rem solid rgb(116,228,248)
+		background: #def0f6 url('../img/g3.png') no-repeat center
+		background-size: 50%
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		display: flex
+		justify-content: center
+		align-items: center
+		@media (max-width: 1000px)
+			width: 300px
+			height: 300px
+		@media (max-width: 900px)
+			width: 250px
+			height: 250px
+		@media (max-width: 750px)
+			width: 200px
+			height: 200px
+		@media (max-width: 700px)
+			width: 400px
+			height: 400px
+			position: relative
+			transform: translate(-50%,0)
+		button 
+			margin-top: 12rem
+			width: 70%

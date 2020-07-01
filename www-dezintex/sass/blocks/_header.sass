@@ -1,0 +1,86 @@
+.header 
+	background: #fff url('../img/bg1.jpg') no-repeat center
+	background-size: cover
+	padding: 3rem 0
+	position: relative
+	top: 0
+	left: 0
+	z-index: 1
+	width: 100%
+	&__inner 
+		display: flex
+		justify-content: space-between
+		@media (max-width: 700px)
+			flex-direction: column
+			align-items: center
+	&__logo 
+		display: flex
+		align-items: center
+		margin-bottom: 1.6rem
+		.logo 
+			margin-right: 1.9rem
+			width: 7.825rem
+		span 
+			font-size: 4.1rem
+			font-weight: bold
+			text-transform: uppercase
+			color: #3AA48C
+	&__subtitle
+		font-size: 2rem
+		line-height: 1.1
+		font-weight: 500
+		text-transform: uppercase
+		color: #000
+		margin-bottom: 3.1rem
+	&__title 
+		h1
+			color: #132A82
+			font-size: 4.8rem
+			line-height: 1.5
+			font-weight: 900
+			text-transform: uppercase
+			@media (max-width: 500px)
+				font-size: 4rem
+	&__list 
+		display: flex
+		justify-content: space-between
+		max-width: 89%
+		@media (max-width: 500px)
+			flex-direction: column-reverse
+			align-items: center
+			max-width: 100%
+		.img 
+			max-width: 30%
+			margin-right: 2rem
+			margin-bottom: 2rem
+		.list 
+			max-width: 384px
+			margin-top: 2.2rem
+			@media (max-width: 500px)
+				max-width: 100%
+			&__item	
+				background-color: #fff
+				border-radius: 4px
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+				padding: 1.1rem 2rem 1.1rem 8rem
+				margin-bottom: 1.5rem
+				font-size: 2rem
+				line-height: 1.1
+				font-weight: 500
+				color: #000
+				opacity: .95
+				position: relative
+				&::before 
+					content: ''
+					width: 4.8rem
+					height: 4.8rem
+					background: #3AA48C url('../img/Vector.svg') no-repeat center
+					border-radius: 100%
+					position: absolute
+					top: 50%
+					left: 2rem
+					transform: translateY(-50%)
+				span 
+					color: #E85252
+
+

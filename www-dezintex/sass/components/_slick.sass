@@ -1,0 +1,113 @@
+// ОСНОВНЫЕ СТИЛИ СЛАЙДЕРА
+// .slick
+// 	&-slider 
+// 		position: relative
+
+// 	&-list 
+// 		position: relative
+// 		overflow: hidden
+
+// 	&-track 
+// 		display: flex
+// 		align-items: flex-start
+
+
+// СТИЛИ КОНКРЕТНОГО СЛАЙДЕРА
+.slider-tems1 
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	&__item 
+		flex-basis: 30%
+		text-align: center
+		margin-bottom: 2rem
+		h3
+			width: 176px
+			font-style: normal
+			font-weight: normal
+			font-size: 1.8rem
+			line-height: 1.5
+			text-align: center
+			color: #000
+			margin: 0 auto
+	&__img 
+		margin: 0 auto 1rem
+	.slick 
+		&-dots 
+			padding: 0
+			margin: 30px auto 0
+			list-style: none
+			display: flex
+			justify-content: center
+			align-items: center
+			li 
+				margin: 0 5px
+				padding: 0
+				display: flex
+				justify-content: center
+				align-items: center
+				button 
+					font-size: 0
+					line-height: 0
+					padding: 0
+					width: 12px
+					height: 12px
+					border-radius: 50%
+					border: 1px solid #c8c8c8
+					background-color: transparent
+					&:focus
+						outline: 0
+				&.slick-active 
+					button
+						background-color: #a9afb3
+
+		&-arrow 
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			box-sizing: border-box
+			display: block
+			height: 20px
+			width: 20px
+			border: 0
+			line-height: 0
+			font-size: 0
+			background: #f00
+			outline: none
+			&:hover, &:focus 
+				outline: none
+			&.slick-disabled 
+				opacity: .25
+		&-prev 
+			left: 2rem
+		&-next 
+			right: 2rem
+
+
+.slider-tems1
+	position: relative
+	z-index: 2
+	padding: 0 15rem
+	margin-bottom: 6.5rem
+	@media (max-width: 768px)
+		padding: 0 10rem
+	@media (max-width: 700px)
+		top: 32rem
+		margin-bottom: 10rem
+
+	&__item 
+		text-align: center
+	&__title 
+		color: #353738
+		font-size: 1.8rem
+		font-weight: 700
+		margin-bottom: 1em
+		span 
+			font-weight: 300
+			color: #848789
+	&__img 
+		width: 148px
+		height: 148px
+		border-radius: 50%
+		border: 1px solid red
+		overflow: hidden
