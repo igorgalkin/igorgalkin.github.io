@@ -1,0 +1,46 @@
+.tours
+	margin-bottom: 13rem
+	@media screen and (max-width:767px) 
+		margin-bottom: 6rem
+	&__tour
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		column-gap: 6rem
+		align-items: center
+		margin-bottom: 7rem
+		@media screen and (max-width:960px) 
+			grid-column-gap: 3rem
+		@media screen and (max-width:767px) 
+			margin-bottom: 4rem
+.tour 
+	&__info 
+		padding: 0 4rem
+		@media screen and (max-width:960px)
+			padding: 0
+		@media screen and (max-width:767px) 
+			grid-column: span 2
+	&__pic
+		@media screen and (max-width:767px) 
+			grid-column: span 2
+			margin-bottom: 1rem
+			&--mob 
+				@media screen and (max-width:767px) 
+					grid-row-start: -1
+		img 
+			object-fit: cover
+			height: 100%
+	&__title
+		font-weight: 500
+		font-size: 30px
+		line-height: 40px
+		margin-bottom: 4.5rem
+		@media screen and (max-width:960px)
+			margin-bottom: 1.5rem
+	&__desc 
+		font-weight: normal
+		font-size: 16px
+		line-height: 24px
+		margin-bottom: 4.5rem
+		@media screen and (max-width:960px)
+			margin-bottom: 1.5rem
+	

@@ -1,0 +1,70 @@
+.benefits
+	margin-bottom: 13rem
+	@media screen and (max-width: 960px) 
+		margin-bottom: 6rem
+	@media screen and (max-width: 767px) 
+		margin-bottom: 0
+	&__wrap
+		max-width: 1260px
+		margin: 0 auto
+		position: relative
+		background-color: #fff
+		box-shadow: 0px 2px 20px rgba(21, 24, 36, .16)
+		@media screen and (max-width: 960px) 
+			box-shadow: none
+	&__title
+		width: 100%
+		font-weight: 500
+		font-size: 3.5rem
+		line-height: 1.2
+		color: #102746
+		padding: 9rem 10rem
+		position: absolute
+		top: 0
+		left: 0
+		transform: translateY(-100%)
+		background-color: #fff
+		@media screen and (max-width: 960px) 
+			padding: 4.5rem 1.5rem
+		@media screen and (max-width: 767px) 
+			font-size: 3rem
+	&__cards
+		display: grid
+		grid-template-columns: repeat(3,1fr) 
+		column-gap: 5.5rem
+		padding: 3rem 10rem 0
+		@media screen and (max-width: 960px) 
+			padding: 0 1.5rem
+			column-gap: 3.5rem
+	&__card
+		grid-column: span 1
+		color: #000
+		padding-bottom: 10rem
+		@media screen and (max-width: 960px) 
+			padding-bottom: 5rem
+		@media screen and (max-width: 767px) 
+			grid-column: span 3
+	&__card--pic
+		margin-bottom: 3.6rem
+		max-width: 66px
+		@media screen and (max-width: 767px) 
+			margin-bottom: 2rem
+	&__card--img
+		display: block
+	&__card h3	
+		margin: 0
+		margin-bottom: 2.6rem
+		font-weight: 500
+		font-size: 18px
+		line-height: 24px
+		@media screen and (max-width: 767px) 
+			margin-bottom: 1.5rem
+	&__card p 
+		font-weight: normal
+		line-height: 1.5
+		margin: 0
+		margin-bottom: 4rem
+		@media screen and (max-width: 767px) 
+			margin-bottom: 2rem
+	&__card--link
+		
