@@ -15,4 +15,4 @@
 
 [www.travel-lp](https://igorgalkin.github.io/travel-lp/index.html "Верстка лендинга Travel-lp") - технологии html, SASS, flex, grid, js
 
-[www.webovio](https://igorgalkin.github.io/webovio/index.html "Верстка лендинга Webovio") - технологии html, SASS, flex, grid
+[www.webovio](https://igorgalkin.github.io/webovio/index.html "Верстка лендинга Webovio") - технологии html, SASS, flex, grid 
