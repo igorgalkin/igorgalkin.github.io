@@ -1,0 +1,70 @@
+// === базовые стили ===
+body 
+	font-family: 'Poppins'
+	font-weight: 400
+
+h1,h2,h3,p 
+	margin: 0
+
+.wrapper 
+	
+.container 
+	max-width: 1140px
+	margin: 0 auto
+	padding: 0 15px
+
+.link-reset 
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+.btn-reset 
+	padding: 0
+	border: none 
+	background-color: transparent
+	cursor: pointer
+
+.link
+	display: inline-flex
+	font-size: 16px
+	line-height: 1
+	color: #d4d6d4
+	transition: color .3s ease-in-out
+	svg 
+		width: 6px
+		fill: currentColor
+	span 
+		text-indent: 8px
+		border-bottom: 1px solid currentColor
+	&:hover 
+		color: #ffd723
+
+.social
+	display: flex
+	align-items: center
+	&__item 
+		&:not(:last-child)
+			margin-right: 20px
+	&__link 
+		display: block
+		width: 30px
+		height: 30px
+		border-radius: 100%
+		background-color: #444a34
+		background-position: center 
+		background-repeat: no-repeat
+		background-size: 15px auto
+		opacity: .3
+		transition: all .3s ease-in-out
+		&:hover 
+			background-color: #FFD723
+			opacity: 1
+		&-fb 
+			background-image: url(../img/svg/facebook.svg)
+		&-tw 
+			background-image: url(../img/svg/twitter.svg)
+		&-g 
+			background-image: url(../img/svg/google-plus.svg)
+			background-size: 20px auto
+		&-in 
+			background-image: url(../img/svg/linkedin.svg)

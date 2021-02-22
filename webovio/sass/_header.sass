@@ -1,0 +1,51 @@
+.header 
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	padding: 20px 0
+	background-color: rgba(0,0,0,.6)
+	&__container 
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__logo 
+		max-width: 256.29px
+		@media (max-width: 400px) 
+			max-width: 200px
+	
+.logo 
+
+.burger 
+	width: 40px
+	height: 40px
+	background-color: #f5f6f7
+	border-radius: 100%
+	border: none
+	position: relative
+	transition: background-color .3s ease-in-out 
+	&::before, &::after 
+		content: ""
+		display: block
+		width: 18px
+		height: 2px
+		background: #000 
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		transition: .3s
+	&::before 
+		top: 14px
+		box-shadow: 0 5px 0 #000
+	&::after 
+		bottom: 14px
+	&--active 
+		&::before 
+			top: 7px
+			box-shadow: none
+			transform: rotate(45deg)
+		&::after 
+			bottom: 7px
+			transform: rotate(-45deg)
+	&:hover 
+		background-color: #ffd723
