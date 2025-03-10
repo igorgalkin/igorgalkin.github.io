@@ -1,8 +1,6 @@
 # Галкин Игорь 
 Мои работы по верстке макетов сайта (все сайты адаптивные)
 
-[www.pesni-bardov](http://pesni-bardov.ru/ "Рассветные песни") - технологии html, SASS, flex, js
-
 [www.dezintex](https://igorgalkin.github.io/www-dezintex/index.html "Верстка макета Dezintex") - технологии SASS, flex, jQuery
 
 [www.CenterLogistic](https://igorgalkin.github.io/CenterLogistic/index.html "Верстка макета CenterLogistics") - технологии SASS, flex, jQuery
